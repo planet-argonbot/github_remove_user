@@ -9,7 +9,7 @@ end
 
 username = ARGV.first
 
-owner = "planetargon"
+owner = STDIN.gets("Github Username: ")
 password = STDIN.getpass("Password: ")
 
 github = Github.new basic_auth: "#{owner}:#{password}"
